@@ -30,6 +30,11 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" syntastic c++11
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
+
+
 " You Complete me Setting
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
