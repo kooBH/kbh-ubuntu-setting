@@ -1,8 +1,12 @@
-# personal-vim-setting
-vim setting
+# kbh-ubuntu-setting
 
-http://squidarth.com/programming/2018/12/14/tmux-linux.html
+### vim
++ Vundle
++ vim-airline
++ syntastic
++ YouCompleteMe
++ clipboard
 
-https://github.com/tmux-plugins/tpm
-
-https://github.com/tmux-plugins/tmux-resurrect
+### tmux
++ tmux-resurrect
++ clipboard
