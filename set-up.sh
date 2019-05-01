@@ -3,7 +3,7 @@
 # Packages
 sudo apt-get --assume-yes install build-essential cmake
 sudo apt-get --assume-yes install python-dev python3-dev
-sudo apt-get --assume-yes install git
+sudo apt-get --assume-yes install git-core
 sudo apt-get --assume-yes install vim
 
 ### vim
@@ -25,8 +25,6 @@ git submodule update --init --recursive
 cd ..
 mv YouCompleteMe ~/.vim/bundle/
 
-sudo vim +PluginInstall
-
 ### tmux
 
 sudo apt-get --assume-yes install tmux
@@ -37,3 +35,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp .tmux.conf ~/.tmux.conf
 
 echo "prefix + 'I' at tmux to install tmux-resurrect"
+
+
+###
+
+sudo vim +PluginInstall
