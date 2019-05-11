@@ -2,11 +2,16 @@
 
 # Packages
 sudo apt-get --assume-yes install build-essential cmake
-sudo apt-get --assume-yes install python-dev python3-dev
 sudo apt-get --assume-yes install git-core
-sudo apt-get --assume-yes install vim
+
+# Python 
+sudo apt-get --assume-yes install python-dev python3-dev
+sudo apt-get --assume-yes install python-pip
+pip install --upgrade pip
+
 
 ### vim
+sudo apt-get --assume-yes install vim
 sudo apt-get --assume-yes install vim-gnome
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
