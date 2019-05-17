@@ -32,7 +32,8 @@ mv YouCompleteMe ~/.vim/bundle/
 
 ### tmux
 
-sudo apt-get --assume-yes install tmux
+#sudo apt-get --assume-yes install tmux
+sh install_tmux.sh
 sudo apt-get --assume-yes install xclip
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
