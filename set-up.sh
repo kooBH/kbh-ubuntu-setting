@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# gnome-tweak-tool -> Typing -> Ctrl Key Position -> Caps Lock as Ctrl
+sudo apt-get -y install gnome-tweak-tool
+
 # Packages
 sudo apt-get --assume-yes install build-essential cmake
 sudo apt-get --assume-yes install git-core
