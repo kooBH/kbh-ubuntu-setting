@@ -52,5 +52,12 @@ let g:ycm_show_diagnostics_ui = 0
 let g:ycm_enable_diagnostic_signs = 0 
 let g:ycm_enable_diagnostic_highlighting = 0
 
+" https://vi.stackexchange.com/questions/3124/fold-selected-lines
+" Fold Lines 
+" Visual mode to select
+" z,f to fold, z,o to unfold
+set foldmethod=manual
+
+
 
 so ~/.vim/plugins.vim
