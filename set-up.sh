@@ -1,5 +1,8 @@
 #!/bin/sh
 
+###
+sudo apt-get -y htop
+
 # gnome-tweak-tool -> Typing -> Ctrl Key Position -> Caps Lock as Ctrl
 sudo apt-get -y install gnome-tweak-tool
 
