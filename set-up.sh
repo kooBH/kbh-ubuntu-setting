@@ -54,5 +54,10 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 ###
 
+# Always On Top command : wmctrl -r :ACTIVE: -b toggle,above
+sudo apt-get -y wmctrl
+
+###
+
 sudo vim +PluginInstall
 
