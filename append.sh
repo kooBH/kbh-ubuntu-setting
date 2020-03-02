@@ -8,4 +8,4 @@ alias gca='git commit --amend '
 alias gps='git push origin'
 alias gpl='git pull origin'
 
-./zsh
+zsh
