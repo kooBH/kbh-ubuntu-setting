@@ -14,11 +14,14 @@ sudo apt-get -y install build-essential cmake
 
 # Python 
 sudo apt-get --assume-yes install python-dev python3-dev
-sudo apt-get --assume-yes install python-pip
+sudo apt-get --assume-yes install python-pip python3-pip
 pip install --upgrade pip
+sudo python3 -m pip install future
 
 
 ### vim
+sudo add-apt-repository ppa:jonathonf/vim 
+sudo apt update
 sudo apt-get --assume-yes install vim
 sudo apt-get --assume-yes install vim-gnome
 
@@ -33,7 +36,7 @@ sudo cp .vimrc ~/.vimrc
 
 ### tmux
 
-#sudo apt-get --assume-yes install tmux
+sudo apt-get --assume-yes install tmux
 sh install_tmux.sh
 sudo apt-get --assume-yes install xclip
 
