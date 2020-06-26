@@ -56,9 +56,11 @@ chsh -s /usr/bin/zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 ###
-
-# Always On Top command : wmctrl -r :ACTIVE: -b toggle,above
-sudo apt-get -y wmctrl
+# Always On Top command : 
+# https://www.maketecheasier.com/keyboard-shortcut-for-always-on-top-ubuntu/
+# setting -> keyboard -> shortcuts -> Custom shortcuts -> + 
+# command |  wmctrl -r :ACTIVE: -b toggle,above
+sudo apt-get install -y wmctrl
 
 ###
 
