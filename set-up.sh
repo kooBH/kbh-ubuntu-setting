@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ###
-sudo apt-get -y htop
+sudo apt-get -y install htop
 
 # gnome-tweak-tool -> Typing -> Ctrl Key Position -> Caps Lock as Ctrl
 sudo apt-get -y install gnome-tweak-tool
@@ -17,6 +17,8 @@ sudo apt-get --assume-yes install python-dev python3-dev
 sudo apt-get --assume-yes install python-pip python3-pip
 pip install --upgrade pip
 sudo python3 -m pip install future
+# Set python3 as default
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3
 
 
 ### vim
