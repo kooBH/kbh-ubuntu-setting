@@ -3,11 +3,13 @@
 git clone https://github.com/Valloric/YouCompleteMe.git
 
 sudo apt-get --asume-yes install clang
-sudo apt-get --asume-yes install python
+sudo apt-get --asume-yes install build-essential
+sudo apt-get --asume-yes install cmake
+sudo apt-get --asume-yes install python3-dev
 cd YouCompleteMe
 git submodule update --init --recursive
-./install.py --clang-completer --system-libclang
-./install.sh
+python3 install.py --clang-completer
+#./install.sh
 cd ..
 mv YouCompleteMe ~/.vim/bundle/
 

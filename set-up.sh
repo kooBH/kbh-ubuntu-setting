@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ###
-sudo apt-get -y htop
+sudo apt-get -y install htop
 
 # gnome-tweak-tool -> Typing -> Ctrl Key Position -> Caps Lock as Ctrl
 sudo apt-get -y install gnome-tweak-tool
@@ -14,11 +14,16 @@ sudo apt-get -y install build-essential cmake
 
 # Python 
 sudo apt-get --assume-yes install python-dev python3-dev
-sudo apt-get --assume-yes install python-pip
+sudo apt-get --assume-yes install python-pip python3-pip
 pip install --upgrade pip
+sudo python3 -m pip install future
+# Set python3 as default
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3
 
 
 ### vim
+sudo add-apt-repository ppa:jonathonf/vim 
+sudo apt update
 sudo apt-get --assume-yes install vim
 sudo apt-get --assume-yes install vim-gnome
 
@@ -33,7 +38,7 @@ sudo cp .vimrc ~/.vimrc
 
 ### tmux
 
-#sudo apt-get --assume-yes install tmux
+sudo apt-get --assume-yes install tmux
 sh install_tmux.sh
 sudo apt-get --assume-yes install xclip
 
@@ -53,9 +58,11 @@ chsh -s /usr/bin/zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 ###
-
-# Always On Top command : wmctrl -r :ACTIVE: -b toggle,above
-sudo apt-get -y wmctrl
+# Always On Top command : 
+# https://www.maketecheasier.com/keyboard-shortcut-for-always-on-top-ubuntu/
+# setting -> keyboard -> shortcuts -> Custom shortcuts -> + 
+# command |  wmctrl -r :ACTIVE: -b toggle,above
+sudo apt-get install -y wmctrl
 
 ###
 
