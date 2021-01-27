@@ -50,12 +50,7 @@ echo "prefix + 'I' at tmux to install tmux-resurrect"
 
 cat append.sh >> ~/.profile
 
-### zsh
-
-sudo apt-get -y install zsh
-chsh -s /usr/bin/zsh
-
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+./zsh.sh
 
 ###
 # Always On Top command : 
