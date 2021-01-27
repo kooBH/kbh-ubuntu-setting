@@ -67,4 +67,3 @@ sudo apt-get install -y wmctrl
 ###
 
 sudo vim +PluginInstall
-
